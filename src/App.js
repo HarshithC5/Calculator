@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-
 import { useState } from "react";
 
 function App() {
@@ -12,7 +10,7 @@ function App() {
     //Update calculated value
     const updateCalc = (value) => {
         if (
-            (ops.includes(value) && calc === "") ||
+            (ops.includes(value) && calc === '') ||
             (ops.includes(value) && ops.includes(calc.slice(-1)))
         ) {
             return;
@@ -41,13 +39,13 @@ function App() {
 
     //Functionality of '=' button
     const calculate = () => {
-        setCalc(eval(calc.toString()));
+        setCalc(eval(calc).toString());
     };
 
     //Functionality of 'DEL' button
     const deleteLast = () => {
-        if (calc == "") {
-            return;
+        if (calc == '') {
+            return ;
         }
 
         const value = calc.slice(0, -1);
@@ -59,7 +57,7 @@ function App() {
         <div className="App">
             <div className="calculator">
                 <div className="display">
-                    {result ? <span>({result})</span> : ""}&nbsp;
+                    {result ? <span>({result})</span> : ''}&nbsp;
                     {calc || "0"}
                 </div>
 

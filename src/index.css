@@ -1,7 +1,6 @@
 :root {
-  --primary: #d81e5b;
-  --secondary: blue;
-  --dark: #131a26;
+  --primary: blue;
+  --dark: black;
   --light: #eee;
 }
 
@@ -51,7 +50,7 @@ button {
   appearance: none;
   border: none;
   outline: none;
-  color: #fff;
+  color: chartreuse;
   font-size: 20px;
   padding: 16px;
   cursor: pointer;
@@ -59,7 +58,7 @@ button {
 }
 
 button:hover {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .operators {
@@ -68,7 +67,7 @@ button:hover {
 
 .operators button {
   flex: 1 1 0%;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   font-weight: 700;
 }
 
